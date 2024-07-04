@@ -3791,8 +3791,7 @@ button.mfp-arrow {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  font-size: 15px;
+  font-size: 27px;
   background-color: transparent;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -3803,6 +3802,27 @@ button.mfp-arrow {
 .footer-about-social-list a:hover {
   background-color: transparent;
   color: #fff;
+}
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .footer-explore-list li + li {
   margin-top: 3px;
@@ -3846,7 +3866,7 @@ button.mfp-arrow {
   margin-bottom: 15px;
 }
 .footer-contact-text {
-  font-size: 15px;
+  font-size: 18px;
   margin: 0;
   color: #05d7a5;
   padding-bottom: 15px;
@@ -3868,7 +3888,7 @@ p.footer-contact-phone {
   color: #fff;
 }
 .footer-contact-mail {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 3em;
   color: #999;
   position: relative;
@@ -3935,6 +3955,19 @@ select {
   background-color: #101010;
   padding: 32px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.map-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .footer-bottom-inner {
   position: relative;
