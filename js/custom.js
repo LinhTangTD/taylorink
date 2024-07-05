@@ -578,7 +578,17 @@ $(function () {
     $(this).addClass("active").siblings().removeClass("active");
   });
   // include navbar
-  $("navbar").load("components/navbar.html");
+  $("navbar").load("components/navbar.html", function () {
+    // Get the current URL path
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+
+    // Remove 'active' class from all nav-links
+    $(".nav-link").removeClass("active");
+
+    // Add 'active' class to the current page link
+    $(".nav-link[href='" + page + "']").addClass("active");
+  });
   // include footer
   $("footer").load("components/footer.html");
 });
