@@ -3593,6 +3593,46 @@ button.mfp-arrow {
   margin-bottom: 0;
 }
 
+.contact .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact .step .icon {
+  color: #05d7a5;
+  margin-right: 15px;
+  border: 1px solid #05d7a5;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  padding-top: 6px;
+  border-radius: 100%;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.contact .step .icon:before {
+  font-size: 24px;
+  font-weight: 400;
+}
+.contact .step .cont {
+  flex-grow: 1; /* Allow content to expand */
+}
+.contact .step h6 {
+  color: #05d7a5;
+  margin-bottom: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 7px;
+}
+
+.contact .step p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
 /* ======= Buttons style ======= */
 .btn-curve {
   background: transparent;
