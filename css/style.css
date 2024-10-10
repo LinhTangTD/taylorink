@@ -2912,7 +2912,7 @@ textarea:focus,
   background: rgba(9, 5, 3, 0.05);
 }
 .gallery-box:hover .gallery-img > img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 /* magnific popup custom */
 .mfp-figure button {
